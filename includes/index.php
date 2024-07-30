@@ -9,14 +9,14 @@
 
     <main>
 
-        <form action="includes/formhandler.php" method="post">
-            <label for="firstname"></label>
+        <form action="formhandler.php" method="post">
+            <label for="firstname">Firstname</label>
             <input id="firstname" type="text" name="firstname" placeholder="Firstname...">
             
-            <label for="lastname"></label>
+            <label for="lastname">Lastname</label>
             <input type="text" name="lastname" id="lastname" placeholder="Lastname...">
 
-            <label for="pet"></label>
+            <label for="pet">Pet</label>
             <select name="pet" id="pet">
                 <option value="none">None</option>
                 <option value="cat">Cat</option>
