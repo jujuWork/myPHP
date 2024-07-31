@@ -15,6 +15,11 @@
         $c = $a . " " . $b;
 
         echo $c;
+
+
+        // ARITHMETIC OPERATOR
+
+        
     ?>
 
 
