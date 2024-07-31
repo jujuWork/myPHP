@@ -46,6 +46,7 @@
         echo "<br>";
 
         // Logical operator
+         
         $a = 4;
         $b = 4;
         $c = 2;
@@ -56,6 +57,12 @@
         }
 
         echo "<br>";
+
+        // Incrementing/decrementing operators
+        //echo ++$a --$a
+
+        $a = 1;
+        echo ++$a;
     ?>
 
 
