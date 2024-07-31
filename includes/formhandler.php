@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($firstname)) {
         exit();
+        header("Location: ./index.php");
     }
 
     echo "These are the data, that the user submitted:";
@@ -20,4 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<br>";
     echo $pets;
 
+} else {
+    header("Location: ./index.php");
 }
