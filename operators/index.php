@@ -17,10 +17,33 @@
         echo $c;
 
         echo "<br>";
-        // ARITHMETIC OPERATOR
 
+        // ARITHMETIC OPERATOR
+        // + - / * ** 
         echo 1 + 2;
-        echo 1 - 2;
+        
+        echo "<br>";
+
+        // Assignment operator
+        $a = 2;
+        $a += 4;
+        echo $a;
+
+        echo "<br>";
+
+        // Comparison operator
+        // == != < <= > >==
+
+        $a = 2;
+        $b = 2;
+
+        if ($a != $b) {
+            echo "This is True!";
+        } else {
+            echo "This is False!";
+        }
+
+        echo "<br>";
     ?>
 
 
