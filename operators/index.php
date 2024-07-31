@@ -44,6 +44,18 @@
         }
 
         echo "<br>";
+
+        // Logical operator
+        $a = 4;
+        $b = 4;
+        $c = 2;
+        $d = 6;
+
+        if ($a == $b or $c == $d) {
+            echo "This is True!";
+        }
+
+        echo "<br>";
     ?>
 
 
