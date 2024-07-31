@@ -16,10 +16,11 @@
 
         echo $c;
 
-
+        echo "<br>";
         // ARITHMETIC OPERATOR
 
-        
+        echo 1 + 2;
+        echo 1 - 2;
     ?>
 
 
