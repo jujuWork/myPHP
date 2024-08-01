@@ -22,6 +22,19 @@
     } else {
         echo "None of the Conditions were true";
     }
+
+    // SWITCH STATEMENT
+
+    switch ($b) {
+        case 1:
+            echo "The first case is correct";
+            break;
+        case 2:
+            echo "The second case is correct";
+            break;
+        default:
+            echo "None of the conditions were true!";
+    }
     
     ?>
 
