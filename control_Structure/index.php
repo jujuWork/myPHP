@@ -9,18 +9,28 @@
     
     <?php 
     
-    // IF ELSE STATEMENT
-
     $bool = true;
     $a = 1;
     $b = 4;
+
+    // MATCH STATEMENT
+
+    $result = match ($a) {
+        1 => "variable a is equal to one!",
+        2 => "Variable a is equal to two!",
+        default => "None were a match",
+    };
+
+    echo $result;
+    
+    // IF ELSE STATEMENT
 
     if ($a < $b && !$bool) {
         echo "First condition is true!";
     } else if ($a < $b && !$bool) {
         echo "Second Condition is true!";
     } else {
-        echo "None of the Conditions were true";
+        echo "None of the Conditions were true!";
     }
 
     // SWITCH STATEMENT
@@ -35,7 +45,8 @@
         default:
             echo "None of the conditions were true!";
     }
-    
+
+
     ?>
 
 </body>
