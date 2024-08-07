@@ -31,7 +31,7 @@
     echo sqrt(16);
     echo rand(1, 100);
 
-    */
+    
 
     // ARRAY
 
@@ -46,6 +46,15 @@
     array_pop($array);
     print_r($array);
 
+    */
+
+    // DATE
+
+    echo date("Y-m-d H:i:s");
+    echo time();
+
+    $date = "2024-08-07 12:00:00";
+    echo strtotime($date);
 
     ?>
 
