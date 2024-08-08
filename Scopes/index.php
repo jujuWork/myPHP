@@ -12,6 +12,7 @@
     $test = "Joharry";
 
     /*
+    // Global Scopes
     
     function myFunction()
     {
@@ -28,9 +29,10 @@
 
     // STATIC SCOPE
 
+    /*
     function myFunction()
     {
-        $staticVar = 0;
+        static $staticVar = 0;
 
         $staticVar++;
 
@@ -38,6 +40,12 @@
     }
 
     echo myFunction();
+    echo myFunction();
+    echo myFunction();
+    */
+
+    // Class Scope
+
 
     ?>
 
