@@ -11,6 +11,8 @@
 
     $test = "Joharry";
 
+    /*
+    
     function myFunction()
     {
         global $test;
@@ -18,6 +20,21 @@
         $localVar = "Hello, World!";
 
         return $test;
+    }
+
+    echo myFunction();
+    */
+
+
+    // STATIC SCOPE
+
+    function myFunction()
+    {
+        $staticVar = 0;
+
+        $staticVar++;
+
+        return $staticVar;
     }
 
     echo myFunction();
