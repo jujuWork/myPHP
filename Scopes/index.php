@@ -13,7 +13,7 @@
 
     /*
     // Global Scopes
-    
+
     function myFunction()
     {
         global $test;
@@ -46,7 +46,7 @@
 
     // Class Scope
 
-
+    
     ?>
 
 </body>
