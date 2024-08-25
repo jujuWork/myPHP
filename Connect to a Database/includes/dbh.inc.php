@@ -1,12 +1,12 @@
 <?php
 
-$dsn = "mysql:host=localhost;dbname=myfirstdatabse";
+$dsn = "mysql:host=localhost;dbname=myfirstdatabase";
 $dbusername ="root";
 $dbpassword = "";
 
 try {
-    $pdo = new PDO($dsn, dbusername, dbpassword);
+    $pdo = new PDO($dsn, $dbusername, $dbpassword);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo "COnnection failed: " . $e->getMessage();
+    echo "Connection failed: " . $e->getMessage();
 }
