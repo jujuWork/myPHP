@@ -8,15 +8,10 @@
 <body>
 
     <?php
-    $brand = "Volva";
-    $color = "Green";
+        require_once '/Users/bb8juju/Documents/GitHub/myPHP/Classes/car.php';
 
-    function getCarInfo($brand, $color)
-    {
-        return "Brand: " . $brand . ", Color: " . $color;
-    }
-
-    echo getCarInfo($brand, $color);
+        $car01 = new Car("Honda", "red");
+        echo $car01->vehicleType;
     ?>
     
 </body>
