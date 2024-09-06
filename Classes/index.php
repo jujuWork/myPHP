@@ -11,7 +11,8 @@
         require_once '/Users/bb8juju/Documents/GitHub/myPHP/Classes/car.php';
 
         $car01 = new Car("Honda", "red");
-        echo $car01->vehicleType;
+        echo $car01->setBrand("Toyota");
+        echo $car01->getBrand();
     ?>
     
 </body>

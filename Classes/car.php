@@ -16,6 +16,18 @@ class Car
       $this->color = $color;  //color(properties) ---- $color(placeholder)
     }
 
+    // Getter and Setter
+
+    public function getBrand()
+    {
+      return $this->brand;
+    }
+
+    public function setBrand($brand)
+    {
+      $this->brand = $brand;
+    }
+
     //Method (accessing private properties)
 
     public function getCarInfo()
