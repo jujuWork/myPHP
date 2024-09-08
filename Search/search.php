@@ -13,13 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(":usersearch, $userSearch");
 
         $stmt->execute();
+
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
  
         $pdo = null;
         $stmt = null;
 
-        header("Location: ../index.php");
 
-        die();
     } catch (PDOException $e) {
         die("Query Failed: " . $e->getMessage());
     }
@@ -38,7 +38,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     
+    <h3>Search Result</h3>
 
+    <?php
+        if (empty($results)) {
+            echo "<div>";
+            echo "<p>There were no Results!</p>";
+            echo "</div>";
+        } else {
+            var_dump($results);
+        }
+        
+    ?>
 
 </body>
 </html>
