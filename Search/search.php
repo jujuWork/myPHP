@@ -1,14 +1,12 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $pwd = $_POST["pwd"];
-    $email = $_POST["email"];
+    $userSearch = $_POST["usersearch"];
 
     try {
-        require "dbh.inc.php";
+        require "includes/dbh.inc.php";
 
-        $query = "INSERT INTO users (username, pwd, email) VALUES (:username, :pwd, :email)";
+        $query = "SELECT * FROM comments WHERE username = :usersearch ";
 
         $stmt = $pdo->prepare($query);
 
