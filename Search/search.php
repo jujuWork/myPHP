@@ -4,18 +4,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userSearch = $_POST["usersearch"];
 
     try {
-        require "includes/dbh.inc.php";
+        require_once "../includes/dbh.inc.php";
 
         $query = "SELECT * FROM comments WHERE username = :usersearch ";
 
         $stmt = $pdo->prepare($query);
 
-        $stmt->bindParam(":username, $username");
-        $stmt->bindParam(":pwd, $pwd");
-        $stmt->bindParam(":email, $email");
+        $stmt->bindParam(":usersearch, $userSearch");
 
         $stmt->execute();
-
+ 
         $pdo = null;
         $stmt = null;
 
