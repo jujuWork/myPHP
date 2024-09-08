@@ -9,7 +9,7 @@
     
     <form action="search.php" class="searchform" method="post">
         <label for="search">Search for user:</label>
-        <input type="text" name="search" placeholder="Search">
+        <input type="text" name="search" placeholder="Search ...">
         <button>Search</button>
     </form>
 
