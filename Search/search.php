@@ -4,13 +4,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userSearch = $_POST["usersearch"];
 
     try {
-        require_once "../includes/dbh.inc.php";
+        require_once "./dbh.inc.php";
 
         $query = "SELECT * FROM comments WHERE username = :usersearch ";
 
         $stmt = $pdo->prepare($query);
 
-        $stmt->bindParam(":usersearch, $userSearch");
+        $stmt->bindParam(":usersearch", $userSearch);
 
         $stmt->execute();
 
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
-
+<a href="./dbh.inc.php"></a>
 <!DOCTYPE html>
 <html lang="en">
 <head>
